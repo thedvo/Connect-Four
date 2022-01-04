@@ -1,16 +1,27 @@
 <!doctype html>
 <head>
-  <title>Connect 4</title>
+  <meta name=“viewport” content=“width=device-width, user-scalable=no”>
   <link href="connect4.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fredoka+One&family=Kanit:wght@700&family=Montserrat&family=PT+Sans&family=Prompt:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fredoka+One&family=Kanit:wght@700&family=Montserrat&family=PT+Sans&family=Prompt:wght@600&display=swap" rel="stylesheet">
+  <title>Connect 4</title>
+
 </head>
 <body>
-<h1>Connect <span>4</span></h1>
-<div id="game">
-  <table id="board"></table>
-</div>
-<button id="restart">Restart</button>
-<script src="connect4.js"></script>
+  <h1>Connect <span>4</span></h1>
 
+  <div id="start-screen">
+    <form action="#" id="color-picker"></form>
+      <input type="color" id="p1-color" value="#FF3C3C" list="defaultColor1">
+      <input type="color" id="p2-color" value="#FDE361" list="defaultColor2">
+      <br>  
+      <button id="start-button">Start</button>
+    </form>
+  </div>
+
+  <div id="game">
+    <table id="board"></table>
+  </div>
+
+<script src="connect4.js"></script>
 </body>
 </html>
